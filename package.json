@@ -1,0 +1,35 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/index.js",
+	"type": "module",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js",
+		"format:check": "prettier --check .",
+		"format:write": "prettier --write .",
+		"lint:check": "eslint .",
+		"lint:fix": "eslint --fix ./*.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.2",
+		"express": "^4.18.1",
+		"express-fileupload": "^1.4.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.6.2"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.14",
+		"@types/node": "^18.7.23",
+		"eslint": "^8.24.0",
+		"eslint-config-prettier": "^8.5.0",
+		"nodemon": "^2.0.20",
+		"prettier": "^2.7.1"
+	}
+}
